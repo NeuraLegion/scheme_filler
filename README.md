@@ -1,18 +1,32 @@
 # scheme_filler
 
-TODO: Write a description here
+`scheme_filler` is a CLI tool that helps you populate an OpenAPI 3.0.0 schema with example values.
+It does so by accepting an HAR file and a schema file, and then generating a new schema file with the example values.
 
 ## Installation
 
-TODO: Write installation instructions here
+### From Source
+
+1. [Install Crystal](https://crystal-lang.org/docs/installation/)
+2. `git clone` this repo
+3. `cd` into the repo
+4. `shards build`
+
+### Docker Image
+
+1. clone the repo
+2. `cd` into the repo
+3. `docker build -t neuralegion/scheme_filler .`
 
 ## Usage
 
-TODO: Write usage instructions here
+### Binary
 
-## Development
+`bin/scheme_filler <scheme_file> <har_file>` will generate a new schema file with the example values.
 
-TODO: Write development instructions here
+### Docker
+
+`docker run -v <path_to_schema_file>:/tmp/schema.json -v <path_to_har_file>:/tmp/har.json neuralegion/scheme_filler /tmp/schema.json /tmp/har.json` will generate a new schema file with the example values.
 
 ## Contributing
 
