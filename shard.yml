@@ -1,0 +1,19 @@
+name: scheme_filler
+version: 0.1.0
+
+authors:
+  - Bar Hofesh <bar.hofesh@gmail.com>
+
+targets:
+  scheme_filler:
+    main: src/scheme_filler.cr
+
+dependencies:
+  swagger:
+    github: icyleaf/swagger
+  har:
+    github: NeuraLegion/har
+
+crystal: 1.8.0
+
+license: MIT
